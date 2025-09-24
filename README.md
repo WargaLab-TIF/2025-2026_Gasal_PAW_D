@@ -8,12 +8,12 @@ Berikut adalah struktur folder yang akan digunakan dalam repository ini:
 
 ```
 2025-2026_Gasal_PAW_D/
-├── Modul-1/
+├── TM1/
 │   └── 24-000_Fulan_Bin_Fulan/
 │       ├── Tugas-1.php
 │       ├── other.php
 │       └── ...
-├── Modul-2/
+├── TM2/
 │   └── 24-000_Fulan_Bin_Fulan/
 │       ├── Tugas-2.php
 │       ├── other.php
@@ -32,7 +32,7 @@ Berikut adalah struktur folder yang akan digunakan dalam repository ini:
 
      1. Clone repository hasil fork ke komputer Anda.
      2. Masuk ke folder modul yang sesuai dengan tugas (misalnya `Modul-1/`).
-     3. Buat folder baru dengan nama **identitas Anda** menggunakan format **nim-pendek_Nama_lengkap**. Contoh:
+     3. Buat folder baru dengan nama **identitas Anda** menggunakan format **nim-pendek_Nama_Lengkap**. Contoh:
         ```
         24-000_Fulan_Bin_Fulan
         ```
@@ -42,7 +42,7 @@ Berikut adalah struktur folder yang akan digunakan dalam repository ini:
 
    - **Metode B (Upload Langsung di GitHub):**
      1. Masuk ke folder modul yang sesuai dengan tugas (misalnya `Modul-1/`).
-     2. Buat folder baru dengan nama **identitas Anda** menggunakan format **nim-pendek_Nama_lengkap**. Contoh:
+     2. Buat folder baru dengan nama **identitas Anda** menggunakan format **nim-pendek_Nama_Lengkap**. Contoh:
         ```
         24-000_Fulan_Bin_Fulan
         ```
