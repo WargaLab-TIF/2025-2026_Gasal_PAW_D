@@ -7,7 +7,7 @@ Repository ini digunakan untuk mengumpulkan tugas-tugas praktikum yang diberikan
 Berikut adalah struktur folder yang akan digunakan dalam repository ini:
 
 ```
-Pengembangan Aplikasi Web/
+2025-2026_Gasal_PAW_D/
 ├── Modul-1/
 │   └── 24-000_Fulan_Bin_Fulan/
 │       ├── Tugas-1.php
