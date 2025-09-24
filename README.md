@@ -8,12 +8,12 @@ Berikut adalah struktur folder yang akan digunakan dalam repository ini:
 
 ```
 2025-2026_Gasal_PAW_D/
-├── TM1/
+├── TM-1/
 │   └── 24-000_Fulan_Bin_Fulan/
 │       ├── Tugas-1.php
 │       ├── other.php
 │       └── ...
-├── TM2/
+├── TM-2/
 │   └── 24-000_Fulan_Bin_Fulan/
 │       ├── Tugas-2.php
 │       ├── other.php
