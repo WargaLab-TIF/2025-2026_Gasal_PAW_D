@@ -1,6 +1,6 @@
 <?php
-	if (isset($_POST['nama']){
-		$nama = $_POST['nama'];
-		echo "hello $nama !";
-	};
+	if (isset($_POST['batas'])){
+		$batas = $_POST['batas'];
+		echo "Batas ukuran : $batas";
+	}
 ?>

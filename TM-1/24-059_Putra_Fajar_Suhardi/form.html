@@ -8,32 +8,32 @@
 </head>
 <body>
 	<form action="index.php" method="POST">
-			<label id="nama" name="nama">Nama : </label>
-			<input type="text" name="nama" size="40">
-			<p>
+		<legend>Create Table</legend>
 			<label id="batas">Batas ukuran : </label>
-			<input type="number" name="batas" placeholder="baris">
-			<input type="number" name="batas" placeholder="kolom">
-			<p>
+			<input type="number" name="batas" placeholder="masukkan batas ukuran">
+
 			<label id="warna" name="warna">Custom Warna : </label>
 			<select name="warna">
-				<option value="">warna</option>
-				<option value="red">red</option>
-				<option value="green">green</option>
-				<option value="blue">blue</option>
+				<option value="" disabled selected hidden>-- pilih warna --</option>
+				<option value="red">Merah</option>
+				<option value="green">Hijau</option>
+				<option value="blue">Biru</option>
 			</select>
-			<p>
+
 			<label id="pola" name="pola">Custom Pola : </label>
 			<select name="pola">
-				<option value="">pilih pola</option>
+				<option value="" disabled selected hidden>-- pilih pola --</option>
 				<option value="kuadrat">Kuadrat</option>
 				<option value="catur">Catur</option>
 				<option value="komposit">Komposit</option>
 				<option value="arsiran">Arsiran</option>
 			</select>
-			<p>
-			<input type="submit" name="submit" value="Submit">
-			<input type="reset" name="reset" value="Clear">
+
+			<div class="kirim">
+				<input type="reset" name="reset" value="Clear">
+				<input type="submit" name="submit" value="Submit">
+			</div>
+
 	</form>
 </body>
 </html>
