@@ -9,12 +9,12 @@ Berikut adalah struktur folder yang akan digunakan dalam repository ini:
 ```
 2025-2026_Gasal_PAW_D/
 ├── TM-1/
-│   └── 24-000_Fulan_Bin_Fulan/
+│   └── PAW2025-1_D_24-178_Fulan_Bin_Fulan/
 │       ├── index.php
 │       ├── other.php
 │       └── ...
 ├── TM-2/
-│   └── 24-000_Fulan_Bin_Fulan/
+│   └── PAW2025-1_D_24-178_Fulan_Bin_Fulan/
 │       ├── index.php
 │       ├── other.php
 │       └── ...
@@ -32,9 +32,9 @@ Berikut adalah struktur folder yang akan digunakan dalam repository ini:
 
      1. Clone repository hasil fork ke komputer Anda.
      2. Masuk ke folder modul yang sesuai dengan tugas (misalnya `TM-1/`).
-     3. Buat folder baru dengan nama **identitas Anda** menggunakan format **nim-pendek_Nama_Lengkap**. Contoh:
+     3. Buat folder baru dengan nama **identitas Anda** menggunakan format **PAW2025-1_Kelas_2DigitAwalNIM-3DigitAkhirNIM_NamaLengkap**. Contoh (Kelas: D, NIM: 240411100178, Nama: Fulan Bin Fulan):
         ```
-        24-000_Fulan_Bin_Fulan
+        PAW2025-1_D_24-178_Fulan_Bin_Fulan
         ```
         (ganti dengan NIM dan nama asli Anda).
      4. Kerjakan tugas di dalam folder identitas yand sudah Anda buat.
@@ -42,9 +42,9 @@ Berikut adalah struktur folder yang akan digunakan dalam repository ini:
 
    - **Metode B (Upload Langsung di GitHub):**
      1. Masuk ke folder modul yang sesuai dengan tugas (misalnya `TM-1/`).
-     2. Buat folder baru dengan nama **identitas Anda** menggunakan format **nim-pendek_Nama_Lengkap**. Contoh:
+     2. Buat folder baru dengan nama **identitas Anda** menggunakan format **PAW2025-1_Kelas_2DigitAwalNIM-3DigitAkhirNIM_NamaLengkap**. Contoh (Kelas: D, NIM: 240411100178, Nama: Fulan Bin Fulan):
         ```
-        24-000_Fulan_Bin_Fulan
+        PAW2025-1_D_24-178_Fulan_Bin_Fulan
         ```
         (ganti dengan NIM dan nama asli Anda).
      3. Upload file hasil pekerjaan Anda (misalnya `index.php`, dll.) ke dalam folder identitas tersebut.
