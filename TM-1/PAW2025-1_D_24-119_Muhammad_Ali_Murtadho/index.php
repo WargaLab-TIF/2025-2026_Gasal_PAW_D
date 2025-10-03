@@ -16,7 +16,7 @@ require_once('fungsi_tabel.php');
 	<form action="index.php" method="POST">
 		<div>
 		<label for="baris">Jumlah Baris dan Kolom</label>
-		<input type="number" name="baris" id="baris">
+		<input type="number" name="baris" id="baris" required>
 		</div>
 		<div>
 		<label for="warna">Warna</label>
@@ -58,7 +58,6 @@ require_once('fungsi_tabel.php');
 		<div class='content'>
 
 		";
-
 		tampil_tabel($baris, $tampilan, $warna);
 		echo "</div>";
 	}

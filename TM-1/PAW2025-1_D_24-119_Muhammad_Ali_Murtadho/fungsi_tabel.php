@@ -11,7 +11,6 @@ function tampil_tabel($baris, $tampilan,$warna){
 	}else if($tampilan == 'Arsir'){
 		arsir($baris, $warna);
 	}
-
 	echo "</table>";
 }
 
@@ -59,10 +58,14 @@ function catur($baris,$warna){
 				if ($res % 2 == 1) {
 					echo "<td class=$warna>{$temp}</td>";	
 				}else{
-					echo "<td>{$temp} </td>";
+					echo "<td>{$temp}</td>";
 				}
-				if ($res == 10) {
-					$res = 0;
+				if ($res == $baris) {
+					if ($baris %2 == 0) {
+						$res = 0;
+					}else{
+						$res = 1;
+					}
 				}		
 			}
 			$res++;	
@@ -118,12 +121,12 @@ function arsir($baris, $warna){
 					echo "<th>{$i} </th>";
 				}else{
 					$temp = $i ** $j;
-					if ($res%10==1) {
+					if ($res%$baris==1) {
 						echo "<td class=$warna>{$temp}</td>";
 					}else{
 						echo "<td>{$temp}</td>";
 					}
-					if ($res == 10) {
+					if ($res == $baris) {
 						$res = 0;
 					}
 				}
