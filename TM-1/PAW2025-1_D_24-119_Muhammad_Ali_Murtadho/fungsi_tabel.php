@@ -29,7 +29,7 @@ function kuadrat($baris, $warna){
 				$temp = $i ** $j;
 				$akar = sqrt($temp);
 				if ($akar == (int)$akar) {
-					echo "<td class=$warna>{$temp} </td>";	
+					echo "<td class='$warna'>{$temp} </td>";	
 
 				}else{
 					echo "<td>{$temp} </td>";
@@ -56,7 +56,7 @@ function catur($baris,$warna){
 			}else{
 				$temp = $i ** $j;
 				if ($res % 2 == 1) {
-					echo "<td class=$warna>{$temp}</td>";	
+					echo "<td class='$warna'>{$temp}</td>";	
 				}else{
 					echo "<td>{$temp}</td>";
 				}
@@ -97,7 +97,7 @@ function komposit($baris, $warna){
 					$k++;
 				}
 				if ($komposit) {
-					echo "<td class=$warna>{$temp}</td>";	
+					echo "<td class='$warna'>{$temp}</td>";	
 				}else{
 					echo "<td>{$temp} </td>";
 				}
@@ -122,7 +122,7 @@ function arsir($baris, $warna){
 				}else{
 					$temp = $i ** $j;
 					if ($res%$baris==1) {
-						echo "<td class=$warna>{$temp}</td>";
+						echo "<td class='$warna'>{$temp}</td>";
 					}else{
 						echo "<td>{$temp}</td>";
 					}
