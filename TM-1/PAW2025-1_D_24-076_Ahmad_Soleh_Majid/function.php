@@ -52,7 +52,7 @@ function prima($num,$warna){
 
 function kubik($num,$warna){
   $kondisi=false;
-  $count = 1;
+  $count = 0;
   while($count * $count * $count <= $num){
     if ($count * $count * $count == $num){
       $kondisi = true;
