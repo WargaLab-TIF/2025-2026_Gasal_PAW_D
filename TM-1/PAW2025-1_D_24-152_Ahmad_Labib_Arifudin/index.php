@@ -12,12 +12,12 @@
 		<table class="table1">
 			<tr>
 				<th><label for="ukuran">Ukuran :</label></th>
-				<td><input type="number" name="ukuran" min="1" required></td>
+				<td><input type="number" name="ukuran" min="1" id="ukuran" required></td>
 			</tr>
 			<tr>
 				<th><label for="aturan">Aturan :</label></th>
 				<td>
-					<select name="aturan" required>
+					<select name="aturan" id="aturan" required>
 						<option value="">--pilih--</option>
 						<option value="kubik">Bilangan Kubik</option>
 						<option value="batas">Perbatasan</option>
@@ -27,9 +27,9 @@
 				</td>
 			</tr>
 			<tr>
-				<th>Warna :</th>
+				<th><label for="warna">Warna :</label></th>
 				<td>
-					<select name="warna" required>
+					<select name="warna" id="warna" required>
 						<option value="">--pilih--</option>
 						<option value="red">Red</option>
 						<option value="yellow">Yellow</option>
@@ -40,6 +40,7 @@
 			</tr>
 			<tr>
 				<td><button type="submit">submit</button></td>
+				<td></td>
 			</tr>
 		</table>
 	</form>
