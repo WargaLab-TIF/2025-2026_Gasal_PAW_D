@@ -1,16 +1,50 @@
-<?php
-	if (isset($_POST['batas'])){
-		$batas = $_POST['batas'];
-		echo "Batas ukuran : $batas<br>";
-	}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+</body>
+</html>
 
-	if (isset($_POST['warna'])){
-		$warna = $_POST['warna'];
-		echo "Warna yang dipilih : $warna<br>";
-	}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Welcome !</title>
+</head>
+<body>
+	<form action="index.php" method="POST">
+		<legend>Create Table</legend>
+			<label id="batas">Batas ukuran : </label>
+			<input type="number" name="batas" placeholder="masukkan batas ukuran">
 
-	if (isset($_POST['pola'])){
-		$pola = $_POST['pola'];
-		echo "Pola yang dipilih : $pola<br>";
-	}
-?>
+			<label id="warna" name="warna">Custom Warna : </label>
+			<select name="warna">
+				<option value="" disabled selected hidden>-- pilih warna --</option>
+				<option value="red">Merah</option>
+				<option value="green">Hijau</option>
+				<option value="blue">Biru</option>
+			</select>
+
+			<label id="pola" name="pola">Custom Pola : </label>
+			<select name="pola">
+				<option value="" disabled selected hidden>-- pilih pola --</option>
+				<option value="kuadrat">Kuadrat</option>
+				<option value="catur">Catur</option>
+				<option value="komposit">Komposit</option>
+				<option value="arsiran">Arsiran</option>
+			</select>
+
+			<div class="kirim">
+				<input type="reset" name="reset" value="Clear">
+				<input type="submit" name="submit" value="Submit">
+			</div>
+
+	</form>
+</body>
+</html>
