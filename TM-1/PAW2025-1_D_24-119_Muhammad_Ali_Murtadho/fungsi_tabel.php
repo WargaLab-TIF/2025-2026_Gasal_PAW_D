@@ -1,8 +1,9 @@
 <?php 
+// Main Function
 function tampil_tabel($baris, $tampilan,$warna){
 	echo "<table>";
 
-	if ($tampilan == 'Kuadrat') {
+	if($tampilan == 'Kuadrat') {
 		kuadrat($baris, $warna);
 	}else if($tampilan == 'Catur'){
 		catur($baris, $warna);
@@ -14,14 +15,14 @@ function tampil_tabel($baris, $tampilan,$warna){
 	echo "</table>";
 }
 
+// Fungsi Akar Tampilan Kuadrat
 function kuadrat($baris, $warna){
 	for ($i=0; $i <=$baris ; $i++) { 
 		echo "<tr>";
 		for ($j=0; $j <=$baris ; $j++) { 
 			if ($i == 0 && $j == 0) {
 				echo "<td></td>";
-			}
-			else if ($i == 0) {
+			}else if ($i == 0) {
 				echo "<th>{$j} </th>";
 			}else if($j==0){
 				echo "<th>{$i} </th>";	
@@ -30,7 +31,6 @@ function kuadrat($baris, $warna){
 				$akar = sqrt($temp);
 				if ($akar == (int)$akar) {
 					echo "<td class='$warna'>{$temp} </td>";	
-
 				}else{
 					echo "<td>{$temp} </td>";
 				}
@@ -40,7 +40,7 @@ function kuadrat($baris, $warna){
 	}
 }
 
-
+// Fungsi Akar Tampilan Kuadrat
 function catur($baris,$warna){
 	for ($i=0; $i <=$baris ; $i++) { 
 		echo "<tr>";
@@ -48,8 +48,7 @@ function catur($baris,$warna){
 		for ($j=0; $j <=$baris ; $j++) {
 			if ($i == 0 && $j == 0) {
 				echo "<th></th>";
-		 	} 
-			else if ($i == 0) {
+		 	}else if ($i == 0) {
 				echo "<th>{$j} </th>";
 			}else if($j==0){
 				echo "<th>{$i} </th>";
@@ -74,6 +73,7 @@ function catur($baris,$warna){
 	}
 }
 
+// Fungsi Akar Tampilan Kuadrat
 function komposit($baris, $warna){
 	for ($i=0; $i <=$baris ; $i++) { 
 		echo "<tr>";
@@ -107,33 +107,33 @@ function komposit($baris, $warna){
 	}
 }
 
+// Fungsi Akar Tampilan Kuadrat
 function arsir($baris, $warna){
 	for ($i=0; $i <=$baris ; $i++) { 
-			echo "<tr>";
-			$res = $i;
-			for ($j=0; $j <=$baris ; $j++) {
-				if ($j == 0&&$i == 0) {
-				 	echo "<th></th>";
-				 } 
-				else if ($i == 0) {
-					echo "<th>{$j} </th>";
-				}else if($j==0){
-					echo "<th>{$i} </th>";
+		echo "<tr>";
+		$res = $i;
+		for ($j=0; $j <=$baris ; $j++) {
+			if ($j == 0&&$i == 0) {
+			 	echo "<th></th>";
+			}else if ($i == 0) {
+				echo "<th>{$j} </th>";
+			}else if($j==0){
+				echo "<th>{$i} </th>";
+			}else{
+				$temp = $i ** $j;
+				if ($res%$baris==1) {
+					echo "<td class='$warna'>{$temp}</td>";
 				}else{
-					$temp = $i ** $j;
-					if ($res%$baris==1) {
-						echo "<td class='$warna'>{$temp}</td>";
-					}else{
-						echo "<td>{$temp}</td>";
-					}
-					if ($res == $baris) {
-						$res = 0;
-					}
+					echo "<td>{$temp}</td>";
 				}
-				$res++;
+				if ($res == $baris) {
+					$res = 0;
+				}
 			}
-			echo "</tr>";
+			$res++;
 		}
+		echo "</tr>";
+	}
 }
 
  ?>

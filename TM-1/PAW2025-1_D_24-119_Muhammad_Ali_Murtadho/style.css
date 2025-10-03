@@ -25,6 +25,8 @@ label{
 
 select{
 	width: 170px;
+	font-family: sans-serif;
+	
 }
 div{
 	margin: 5px;
