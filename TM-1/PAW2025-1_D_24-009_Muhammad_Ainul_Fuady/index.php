@@ -50,11 +50,10 @@
 
 			</form>
 			<!-- end form -->
-
 		</div>
 	</div>
 	<?php
-	include "function.php";
+	require_once "function.php";
 	if (isset($_POST['submit'])) {
 		sizeLimit($_POST['batas_ukuran'], $_POST['aturan_filter_tampilan'], $_POST['warna_filter_tampilan']);
 	}

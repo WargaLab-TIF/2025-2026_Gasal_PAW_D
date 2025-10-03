@@ -1,8 +1,8 @@
 * {
-  font-family: serief, calibri, sans-serif, verdana, arial;
+  font-family: verdana, arial;
   padding: 0;
   margin: 0;
-  box-sizing: border;
+  box-sizing: border-box;
 }
 
 table {
@@ -42,7 +42,7 @@ td {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border: 2px solid grey;
+  border: 2px solid lightsalmon;
   width: 50%;
   margin: 0 auto;
   background-color: orange;
