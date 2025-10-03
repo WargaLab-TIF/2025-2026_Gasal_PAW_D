@@ -1,0 +1,24 @@
+.table2{
+	border-collapse: collapse;
+	width: 50%;
+}
+.table2 td,.table2 th{
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+.table2 th{
+	background-color: lightgray;
+}
+.red{
+	background-color: red;
+}
+.yellow{
+	background-color: yellow;
+}
+.green{
+	background-color: green;
+}
+.pink{
+	background-color: pink;
+}
