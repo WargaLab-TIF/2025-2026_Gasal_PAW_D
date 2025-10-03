@@ -1,70 +1,71 @@
-* {	
-	font-family: serief, calibri, sans-serif, verdana, arial;
-	padding: 0;
-	margin: 0;
-	box-sizing: border;
+* {
+  font-family: serief, calibri, sans-serif, verdana, arial;
+  padding: 0;
+  margin: 0;
+  box-sizing: border;
 }
 
 table {
-	border: 1px solid black;
-	margin-top: 10px;
-	margin: 10px auto;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin: 10px auto;
 }
 
 body {
-	background-color: #777;
+  background-color: #777;
 }
 
-th, td {
-	border: 1px solid black;
-	padding: 10px;
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
 }
 
 .green {
-	background-color: green;
+  background-color: green;
 }
 
 .red {
-	background-color: red;
+  background-color: red;
 }
 
 .lightblue {
-	background-color: lightblue;
+  background-color: lightblue;
 }
 
 .orange {
-	background-color: orange;
+  background-color: orange;
 }
 
 .form-all {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
-	border: 2px solid grey;
-	width: 50%;
-	margin: 0 auto;
-	background-color: orange;
-	color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid grey;
+  width: 50%;
+  margin: 0 auto;
+  background-color: orange;
+  color: whitesmoke;
 }
 
 .batas-ukuran {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
 }
 
 .aturan-filter-tampilan {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .warna-filter-tampilan {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
 }
