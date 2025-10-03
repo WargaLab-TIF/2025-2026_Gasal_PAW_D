@@ -20,9 +20,9 @@ if(isset($_GET['submit'])){
  	<form method="GET">
  		<p>Ukuran : <input type="number" name="ukuran"></p>
  		<p>Aturan : <select name="aturan">
- 			<option value="kubik">Warnai bilangan kubik (n³)</option>
- 			<option value="batas">Pola perbatasan (outer border)</option>
- 			<option value="prima">Warnai bilangan prima</option>
+ 			<option value="kubik">bilangan kubik (n³)</option>
+ 			<option value="batas">Pola perbatasan</option>
+ 			<option value="prima">bilangan prima</option>
  			<option value="diagonal">Arsiran diagonal</option>
  		</select></p>
  		<p>Warna : <select name="warna">

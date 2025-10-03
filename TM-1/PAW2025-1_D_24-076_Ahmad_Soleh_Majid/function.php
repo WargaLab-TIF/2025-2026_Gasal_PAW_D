@@ -43,7 +43,7 @@ function prima($num,$warna){
       $count++;
     }
   }
-  if($count <= 2 && $count >= 1){
+  if($count > 1 && $count <= 2){
     echo "<td class='$warna'>$num</td>";
   }else{
     echo "<td>$num</td>";
