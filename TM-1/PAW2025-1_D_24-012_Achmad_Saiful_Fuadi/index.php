@@ -2,6 +2,8 @@
 require_once "functions.php";
 
 $batas = isset($_POST['batas']) ? (int)$_POST['batas']:"";
+$filter = isset($_POST['filter']) ? $_POST['filter']:"";
+$warna = isset($_POST['warna']) ? $_POST['warna']:"";
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -19,17 +21,17 @@ $batas = isset($_POST['batas']) ? (int)$_POST['batas']:"";
 
         <label for="filter">Aturan Filter:</label>
         <select name="filter" id="filter">
-            <option value="kubik">Bilangan Kubik</option>
-            <option value="perbatasan">Pola Perbatasan</option>
-            <option value="prima">Bilangan Prima</option>
-            <option value="diagonal">Arsiran Diagonal (kiri atas → kanan bawah)</option>
+            <option value="kubik" <?= ($filter == "kubik")?"selected" : "";?>>Bilangan Kubik</option>
+            <option value="perbatasan" <?= ($filter == "perbatasan")?"selected" : "";?>>Pola Perbatasan</option>
+            <option value="prima" <?= ($filter == "prima")?"selected" : "";?>>Bilangan Prima</option>
+            <option value="diagonal" <?= ($filter == "diagonal")?"selected" : "";?>>Arsiran Diagonal (kiri atas → kanan bawah)</option>
         </select><br><br>
 
         <label for="warna">Warna Filter:</label>
         <select name="warna" id="warna">
-            <option value="yellow">Kuning</option>
-            <option value="lightblue">Biru Muda</option>
-            <option value="lightgreen">Hijau Muda</option>
+            <option value="yellow" <?= ($warna == "yellow")?"selected" : "";?>>Kuning</option>
+            <option value="lightblue" <?= ($warna == "lightblue")?"selected" : "";?>>Biru Muda</option>
+            <option value="lightgreen" <?= ($warna == "lightgreen")?"selected" : "";?>>Hijau Muda</option>
         </select><br><br>
 
         <button type="submit">Tampilkan</button>
