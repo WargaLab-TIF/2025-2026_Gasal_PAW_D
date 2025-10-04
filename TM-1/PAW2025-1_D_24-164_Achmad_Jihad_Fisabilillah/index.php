@@ -5,7 +5,7 @@ $aturan = isset($_GET['aturan']) ? $_GET['aturan'] : 'kubik';
 $warna  = isset($_GET['warna'])  ? $_GET['warna']  : 'warna-merah';
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <title>Tabel Modulus</title>
