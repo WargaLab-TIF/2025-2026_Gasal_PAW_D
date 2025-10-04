@@ -1,0 +1,39 @@
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Warna filter - kuning */
+.kubik-kuning, .perbatasan-kuning, .prima-kuning, .diagonal-kuning {
+    background-color: yellow;
+}
+
+/* Warna filter - biru */
+.kubik-biru, .perbatasan-biru, .prima-biru, .diagonal-biru {
+    background-color: lightblue;
+}
+
+/* Warna filter - hijau */
+.kubik-merah, .perbatasan-merah, .prima-merah, .diagonal-merah {
+    background-color: red;
+}
+
+
+label, h2, option{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0 / 1.0);
+}
+
+tbody{
+    background-color: white;
+}
