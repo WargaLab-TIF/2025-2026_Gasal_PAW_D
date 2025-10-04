@@ -1,0 +1,41 @@
+body {
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+form {
+	margin: 2rem 0 1rem 3rem;
+}
+
+form .label {
+	display: grid;
+	grid-template-columns: 170px 1fr;
+	margin-bottom: 1rem;
+	max-width: 400px;
+}
+
+.table_pangkat {
+	border: 1px solid black;
+	border-spacing: 0;
+	margin: 0 3rem;
+}
+
+.table_pangkat th {
+	font-weight: 900;
+}
+
+.table_pangkat th,
+.table_pangkat td {
+	border: 1px solid black;
+	padding: 16px 20px;
+	text-align: center;
+}
+
+
+button {
+	width: 400px;
+	height: 40px;
+	border-radius: 5px;
+}
