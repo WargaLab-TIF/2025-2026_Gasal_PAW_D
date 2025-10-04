@@ -21,7 +21,7 @@ $warna = isset($_POST['warna']) ? $_POST['warna'] : "";
     <form method="POST">
         <label>Batas Ukuran:</label>
         <input type="number" name="batas" min="1" required
-            value="<?= htmlspecialchars($batas) ?>"><br><br>
+            value="<?= ($batas) ?>"><br><br>
 
         <label>Pilih Aturan Filter:</label>
         <select name="aturan">
