@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input, form select, form button {
+    padding: 6px 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #357abd;
+}
+
+.tabel-modulus {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tabel-modulus th, 
+.tabel-modulus td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.tabel-modulus th {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+
+.heading {
+    background: #f7f7f7;
+    font-weight: bold;
+}
+
+.warna-merah {
+    background-color: #f8d7da;
+}
+.warna-hijau {
+    background-color: #d4edda;
+}
+.warna-biru {
+    background-color: #d6e9f9;
+}
+.warna-kuning {
+    background-color: #fff3cd;
+}
