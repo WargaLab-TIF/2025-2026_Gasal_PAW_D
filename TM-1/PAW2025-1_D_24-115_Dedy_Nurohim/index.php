@@ -1,7 +1,7 @@
 <?php
 include "functions.php";
 
-// Simpan nilai input agar tidak hilang
+
 $batas = isset($_POST['batas']) ? $_POST['batas'] : "";
 $aturan = isset($_POST['aturan']) ? $_POST['aturan'] : "";
 $warna = isset($_POST['warna']) ? $_POST['warna'] : "";
