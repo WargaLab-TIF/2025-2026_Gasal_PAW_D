@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 16px;
+    line-height: 1.4;
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-size: 20px;
+}
+
+.form {
+    margin-bottom: 16px;
+}
+
+.form .row {
+    margin-bottom: 8px;
+}
+
+.form label {
+    display: inline-block;
+    width: 160px;
+}
+
+.form input[type="number"],
+.form select {
+    padding: 6px 8px;
+}
+
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.tbl {
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.tbl th,
+.tbl td {
+    border: 1px solid #333;
+    padding: 6px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.th-head {
+    font-weight: bold;
+    background: #6c6c6c;
+}
