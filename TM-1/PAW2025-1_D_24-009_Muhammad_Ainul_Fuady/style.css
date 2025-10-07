@@ -1,0 +1,71 @@
+* {
+  font-family: verdana, arial;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin: 10px auto;
+}
+
+body {
+  background-color: #777;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.form-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid lightsalmon;
+  width: 50%;
+  margin: 0 auto;
+  background-color: orange;
+  color: whitesmoke;
+}
+
+.batas-ukuran {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.aturan-filter-tampilan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.warna-filter-tampilan {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
