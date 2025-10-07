@@ -1,0 +1,96 @@
+/* Menghindari font Times New Roman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+}
+
+.form-kontrol {
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+}
+
+
+.input-grup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.input-grup input,
+.input-grup select {
+    padding: 4px;
+    border: 1px solid ;
+    border-radius: 4px;
+    margin-right: 3px;
+}
+
+select {
+    margin-top: 3px;
+    margin-left: 19px;
+}
+
+button {
+    padding: 4px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    margin
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.area-tabel {
+    margin-top: 20px;
+    overflow-x: auto; /* Agar bisa scroll horizontal jika tabel terlalu lebar */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    min-width: 50px;
+}
+
+/* Heading tabel */
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Teks nilai bilangan pada heading dicetak tebal (bawaan th sudah tebal, ini untuk memastikan) */
+th b {
+    font-weight: bold;
+}
