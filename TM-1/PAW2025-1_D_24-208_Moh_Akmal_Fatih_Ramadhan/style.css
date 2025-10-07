@@ -1,0 +1,19 @@
+* {
+    font-family: Arial;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.blue { background: blue; color: white; }
+.red { background: red; color: white; }
+.yellow { background: yellow; }
+.cyan { background: cyan; }
