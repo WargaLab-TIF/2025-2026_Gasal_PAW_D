@@ -1,7 +1,7 @@
 <!-- input nama -->
 <div class="input-box">
 	<div class="input-container">
-		<label for="nama">Masukkan nama lengkap anda</label>
+		<label for="nama">Masukkan nama lengkap anda <span class="wajib">*</span></label>
 		<input type="text" name="nama" id="nama" 
 			<?php 
 				if(isset($erros) && (!isset($erros["nama"])))
@@ -17,7 +17,7 @@
 <!-- inputan umur -->
 <div class="input-box">
 	<div class="input-container">
-		<label for="umur">Masukkan umur anda</label>
+		<label for="umur">Masukkan umur anda <span class="wajib">*</span></label>
 		<input type="text" name="umur" id="umur"
 			<?php 
 				if(isset($erros) && (!isset($erros["umur"])))
@@ -33,7 +33,7 @@
 <!-- inputan nama ibu -->
 <div class="input-box">
 	<div class="input-container">
-		<label for="nama_ibu">Masukkan nama ibu anda</label>
+		<label for="nama_ibu">Masukkan nama ibu anda <span class="wajib">*</span></label>
 		<input type="text" name="nama_ibu" id="nama_ibu"
 			<?php 
 				if(isset($erros) && (!isset($erros["nama_ibu"])))
@@ -49,7 +49,7 @@
 <!-- inputan nik -->
 <div class="input-box">
 	<div class="input-container">
-		<label for="nik">Masukkan nik anda</label>
+		<label for="nik">Masukkan nik anda <span class="wajib">*</span></label>
 		<input type="text" name="nik" id="nik"
 			<?php 
 				if(isset($erros) && (!isset($erros["nik"])))
@@ -65,7 +65,7 @@
 <!-- inputan password -->
 <div class="input-box">
 	<div class="input-container">
-		<label for="password">Masukkan password anda</label>
+		<label for="password">Masukkan password anda <span class="wajib">*</span></label>
 		<input type="text" name="password" id="password"
 			<?php 
 				if(isset($erros) && (!isset($erros["password"])))
