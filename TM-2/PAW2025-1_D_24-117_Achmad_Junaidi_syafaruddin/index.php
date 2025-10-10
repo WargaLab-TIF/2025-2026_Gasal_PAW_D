@@ -26,7 +26,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +36,7 @@
 <body>
 	<div class="form-container">
 		<h1>aktivasi rekening</h1>
-		<form action="" method="post">
+		<form method="post">
 			<fieldset>
 				<?php if (isset($_POST['submit']) && count($eror) == 0): 
 				 ?>
