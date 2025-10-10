@@ -7,6 +7,7 @@
 		 for ($baris=0; $baris <= $ukuran; $baris++){
 			echo "<tr class='kolom'>";
 				$x=$ukuran+1;
+				$j=0;
 			for($kolom=0; $kolom<= $ukuran; $kolom++){
 				$kuadrat = $baris ** $kolom;
 				
@@ -55,7 +56,7 @@
 							}
 
 						}
-					}else{
+					}elseif($pola == "4"){
 							if($baris==$x){
 								echo "<td class='baris $warna'>$kuadrat </td>";
 							}else{
@@ -63,9 +64,21 @@
 
 							}
 							
+					}elseif($pola == "5"){
+						if($baris==$x){
+								echo "<td class='baris $warna'>$kuadrat </td>";
+						}if($baris==$j){
+									echo "<td class='baris $warna'>$kuadrat </td>";
+
+						}else{
+							echo "<td class='baris> $kuadrat </td>";
+						}
+						
+
 					}
 				}
 				$x--;
+				$j++;
 			}
 			echo "</tr>";
 
