@@ -1,6 +1,6 @@
 <?php
 	
-	require "fungsi.php";
+	require_once "fungsi.php";
 
 	if(isset($_POST['submit'])) {
 		$nama_lengkap = $_POST['nama'];
@@ -33,28 +33,9 @@
 			<fieldset>
 				<?php if(isset($_POST['submit']) and count($erros) == 0) :?>
 					<h1>REKENING SUDAH DIBUAT</h1>
-					<div class="show-running">
-						<p>Nama lengkap : </p>
-						<p><?= $nama_lengkap ?></p>
-					</div>
-					<div class="show-running">
-						<p>Umur : </p>
-						<p><?= $umur ?></p>
-					</div>
-					<div class="show-running">
-						<p>Nama ibu kandung : </p>
-						<p><?= $nama_ibu ?></p>
-					</div>
-					<div class="show-running">
-						<p>NIK : </p>
-						<p><?= $nik ?></p>
-					</div>
-					<div class="show-running">
-						<p>Password : </p>
-						<p><?= $password ?></p>
-					</div>
+						<?php require_once "berhasil.php" ?>
 				<?php else: ?>
-					<?php require "form.php"; ?>
+					<?php require_once "form.php"; ?>
 				<?php endif ?>
 			</fieldset>
 		</form>
