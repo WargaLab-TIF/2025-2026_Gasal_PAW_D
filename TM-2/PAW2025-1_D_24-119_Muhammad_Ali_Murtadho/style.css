@@ -1,124 +1,125 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #FAA533;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #222;
 }
-    
-/* Form Container */
+
 .form-container {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    padding: 40px;
-    max-width: 600px;
-    width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 50px 40px;
+  max-width: 480px;
+  width: 100%;
 }
 
 .form-container h1 {
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 28px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 35px;
+  font-size: 26px;
+  letter-spacing: 0.5px;
 }
 
-/* Fieldset */
 fieldset {
-    border: none;
-    padding: 0;
+  border: none;
 }
 
-/* Input Box Container */
 .input-box {
-    margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
-.input-container {
-    display: flex;
-    flex-direction: column;
+.ts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
 }
 
-/* Labels */
-.input-container > label {
-    display: inline-block;
-    /*margin-bottom: 8px;*/
-    color: #333;
-    font-weight: 600;
-    font-size: 14px;
+label {
+  font-weight: 600;
+  color: #f8f9fa;
+  font-size: 15px;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 12px 15px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 14px;
-    font-family: inherit;
-    transition: all 0.3s;
-    background: white;
+.eror {
+  color: #ff7675;
+  font-size: 12px;
+  font-style: italic;
+}
+
+input[type="text"]{
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  transition: all 0.25s ease;
 }
 
 input[type="text"]:focus {
-    outline: none;
-    border-color: #FAA533;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(116, 185, 255, 0.6);
+  outline: none;
 }
 
-/* Error Message */
-.eror {
-    color: #e74c3c;
-    font-size: 12px;
-    margin-top: 5px;
-    display: inline-block;
-    min-height: 18px;
-}
-.ts{
-    display: flex;
-    justify-content: space-between;
-
-}
-/* Submit Button */
 input[type="submit"] {
-    width: 150px;
-    padding: 14px;
-    background: #FAA533;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+  width: 100%;
+  background: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+  background: #74b9ff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(9, 132, 227, 0.3);
 }
 
 input[type="submit"]:active {
-    transform: translateY(0);
-}
-.tombol{
-    display: flex;
-    justify-self: end;
+  transform: translateY(0);
 }
 
-.sp{
-    display: flex;
-    flex-direction: column;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
 }
-table{
-    width: 100%;
-    /*border: 1px solid black;*/
+
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #dfe6e9;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td:first-child {
+  font-weight: 600;
+  color: #2d3436;
 }
