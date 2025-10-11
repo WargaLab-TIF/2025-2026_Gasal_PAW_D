@@ -3,23 +3,18 @@
 if (isset($_POST['submit'])) {
 	$nama = $_POST['Nama_Panggilan'] ?? "";
 	$errNama = cekNama($nama);
-	// echo "$nama";
 
 	$telp = $_POST['No_Telp'] ?? "";
 	$errTelp = cekTelp($telp);
-	// echo "$telp";
 
 	$akun = $_POST['Nama_Akun'] ?? "";
 	$errAkun = cekAkun($akun);
-	// echo "$akun";
 	
 	$nik = $_POST['NIK'] ?? "";
 	$errNIK = cekNIK($nik);
-	// echo "$nik";
 
 	$pw = $_POST['Password'] ?? "";
 	$errPw = cekPw($pw);
-	// echo "$pw";
 
 	if (cekAll($errNama, $errTelp, $errAkun, $errNIK, $errPw)) {
         $sukses =  "Selamat $nama ! <br> kamu sudah menjadi Nasabah di Bank ini !";
