@@ -24,7 +24,7 @@
 	<div class="input_konten">
 		<div class="input">
 			<label for="password">Password</label>
-			<input type="password" name="password" id="password" value="<?= $password ?? '' ?>">
+			<input type="text" name="password" id="password" value="<?= $password ?? '' ?>">
 		</div>
 
 		<?php if (!empty($errors['password'])): ?>

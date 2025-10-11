@@ -45,14 +45,14 @@ function valid_pass($field, &$errors) {
 		return;
 	}
 
-	$regex = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/';
+	$regex = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]+$/';
 
 	if (preg_match($regex, $field) && strlen($field) < 8) {
-		 $errors['password'][] = 'Password harus ada kombinasi huruf besar, kecil, angka, karakter dan panjang minimal 8.';
+		 $errors['password'][] = 'Password harus ada kombinasi huruf besar, kecil, angka, dan panjang minimal 8.';
 	} elseif (strlen($field) < 8) {
 		$errors['password'][] = 'Panjang password minimal 8';
 	} elseif (!preg_match($regex, $field) && strlen($field) >= 8) {
-		 $errors['password'][] = 'Password harus ada kombinasi huruf besar, kecil, angka, dan karakter.';
+		 $errors['password'][] = 'Password harus ada kombinasi huruf besar, kecil, dan angka.';
 	}
 }
 
