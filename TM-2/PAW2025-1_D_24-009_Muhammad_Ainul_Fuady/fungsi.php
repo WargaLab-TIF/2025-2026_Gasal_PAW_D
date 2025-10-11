@@ -48,11 +48,11 @@ function valNik($field, &$erors) {
 }
 
 function valPassword($field, &$erors) {
-	$ptPasswordAlfaN = "/^[a-zA-z0-9]{8}+$/";
+	$ptPasswordAlfaN = "/^[a-zA-z0-9]{8,}+$/";
 	if(requiredCheck($field)) {
 		$erors["password"] = "Kolom password wajib di isi";
 	} elseif (!preg_match($ptPasswordAlfaN, $field)) {
-		$erors["password"] = "Kolom password harus 8 char dan alfanumeric";
+		$erors["password"] = "Kolom password harus minimal 8 char";
 	}
 }
 ?>
