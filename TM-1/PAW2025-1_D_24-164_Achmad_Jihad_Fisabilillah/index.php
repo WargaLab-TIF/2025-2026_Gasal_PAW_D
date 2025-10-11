@@ -23,6 +23,7 @@ $warna  = isset($_GET['warna'])  ? $_GET['warna']  : 'warna-merah';
             <option value="border"   <?= $aturan=="border"?"selected":"" ?>>Border</option>
             <option value="prima"    <?= $aturan=="prima"?"selected":"" ?>>Prima</option>
             <option value="diagonal" <?= $aturan=="diagonal"?"selected":"" ?>>Diagonal</option>
+            <option value="ular_tangga"<?= $aturan=="ular_tangga"?"selected":"" ?>>ular tangga</option>
         </select>
         <br>
         <label>Warna:</label>
