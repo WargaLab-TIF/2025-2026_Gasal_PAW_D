@@ -4,7 +4,6 @@ require_once "fungsi.php";
 $errors = [];
 $success = false;
 
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $namaPasien   = $_POST['namaPasien'] ?? '';
     $usia         = $_POST['usia'] ?? '';
@@ -36,27 +35,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!isEmpty($namaPasien) && !isAlphabet($namaPasien))
         $errors['namaPasien'] = "Nama pasien hanya boleh huruf.";
 
-    
     if (!isEmpty($usia) && !isNumericVal($usia))
         $errors['usia'] = "Usia hanya boleh angka.";
 
-   
     if (!isEmpty($kodePasien) && !isAlphanumeric($kodePasien))
         $errors['kodePasien'] = "Kode pasien harus kombinasi huruf dan angka.";
 
-   
     if (!isEmpty($noRekamMedis) && (!isNumericVal($noRekamMedis) || strlen($noRekamMedis) != 6))
         $errors['noRekamMedis'] = "Nomor rekam medis harus angka 6 digit.";
 
-  
     if (!isEmpty($namaPasien) && (strlen($namaPasien) < 3 || strlen($namaPasien) > 30))
         $errors['namaPasien'] = "Nama pasien harus 3–30 karakter.";
     if (!isEmpty($keluhan) && strlen($keluhan) < 10)
         $errors['keluhan'] = "Keluhan minimal 10 karakter.";
 
-    if (empty($errors)) {
-        $success = true;
-    }
+    if (empty($errors)) $success = true;
 }
 ?>
 <!DOCTYPE html>
@@ -75,36 +68,36 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <div class="success">
             <h3>✅ Data berhasil dikirim!</h3>
             <ul>
-                <li><b>Nama Pasien:</b> <?= htmlspecialchars($namaPasien) ?></li>
-                <li><b>Usia:</b> <?= htmlspecialchars($usia) ?></li>
-                <li><b>Kode Pasien:</b> <?= htmlspecialchars($kodePasien) ?></li>
-                <li><b>No. Rekam Medis:</b> <?= htmlspecialchars($noRekamMedis) ?></li>
-                <li><b>Alamat:</b> <?= htmlspecialchars($alamat) ?></li>
-                <li><b>Jenis Kelamin:</b> <?= htmlspecialchars($jenisKelamin) ?></li>
-                <li><b>Jenis Layanan:</b> <?= htmlspecialchars($jenisLayanan) ?></li>
-                <li><b>Keluhan:</b> <?= htmlspecialchars($keluhan) ?></li>
+                <li><b>Nama Pasien:</b> <?= $namaPasien ?></li>
+                <li><b>Usia:</b> <?= $usia ?></li>
+                <li><b>Kode Pasien:</b> <?= $kodePasien ?></li>
+                <li><b>No. Rekam Medis:</b> <?= $noRekamMedis ?></li>
+                <li><b>Alamat:</b> <?= $alamat ?></li>
+                <li><b>Jenis Kelamin:</b> <?= $jenisKelamin ?></li>
+                <li><b>Jenis Layanan:</b> <?= $jenisLayanan ?></li>
+                <li><b>Keluhan:</b> <?= $keluhan ?></li>
             </ul>
         </div>
     <?php else: ?>
-        <form method="POST" action="">
+        <form method="POST" action="<?= $_SERVER["PHP_SELF"]; ?>">
             <label>Nama Pasien:</label>
-            <input type="text" name="namaPasien" value="<?= htmlspecialchars($_POST['namaPasien'] ?? '') ?>">
+            <input type="text" name="namaPasien" value="<?= $_POST['namaPasien'] ?? '' ?>">
             <span class="error"><?= $errors['namaPasien'] ?? '' ?></span>
 
             <label>Usia:</label>
-            <input type="text" name="usia" value="<?= htmlspecialchars($_POST['usia'] ?? '') ?>">
+            <input type="text" name="usia" value="<?= $_POST['usia'] ?? '' ?>">
             <span class="error"><?= $errors['usia'] ?? '' ?></span>
 
             <label>Kode Pasien:</label>
-            <input type="text" name="kodePasien" value="<?= htmlspecialchars($_POST['kodePasien'] ?? '') ?>">
+            <input type="text" name="kodePasien" value="<?= $_POST['kodePasien'] ?? '' ?>">
             <span class="error"><?= $errors['kodePasien'] ?? '' ?></span>
 
             <label>Nomor Rekam Medis (6 digit):</label>
-            <input type="text" name="noRekamMedis" value="<?= htmlspecialchars($_POST['noRekamMedis'] ?? '') ?>">
+            <input type="text" name="noRekamMedis" value="<?= $_POST['noRekamMedis'] ?? '' ?>">
             <span class="error"><?= $errors['noRekamMedis'] ?? '' ?></span>
 
             <label>Alamat:</label>
-            <input type="text" name="alamat" value="<?= htmlspecialchars($_POST['alamat'] ?? '') ?>">
+            <input type="text" name="alamat" value="<?= $_POST['alamat'] ?? '' ?>">
             <span class="error"><?= $errors['alamat'] ?? '' ?></span>
 
             <label>Jenis Kelamin:</label>
@@ -127,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <span class="error"><?= $errors['jenisLayanan'] ?? '' ?></span>
 
             <label>Keluhan:</label>
-            <textarea name="keluhan" rows="4"><?= htmlspecialchars($_POST['keluhan'] ?? '') ?></textarea>
+            <textarea name="keluhan" rows="4"><?= $_POST['keluhan'] ?? '' ?></textarea>
             <span class="error"><?= $errors['keluhan'] ?? '' ?></span>
 
             <button type="submit">Kirim</button>
