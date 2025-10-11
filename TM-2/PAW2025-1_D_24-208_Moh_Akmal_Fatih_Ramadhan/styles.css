@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+body{
+  background: linear-gradient(180deg, #F0F7EE 0%, #FFFDF6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.page-wrap{
+  width: 100%;
+  max-width: 920px;
+  padding: 24px;
+}
+
+.form-card{
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(34, 60, 80, 0.08);
+  padding: 22px;
+  color: #20323a;
+  overflow: hidden;
+}
+
+.card-header h1{
+  margin: 0;
+  font-size: 22px;
+  color: #16324a;
+}
+.card-header .subtitle{
+  margin: 6px 0 18px 0;
+  color: #4b6b73;
+  font-size: 13px;
+}
+
+/* grid two-column layout for label + input */
+.grid-row{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 10px 18px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #f0f0f0;
+}
+.grid-row:last-of-type{
+  border-bottom: 0;
+}
+
+.left label{
+  display: inline-block;
+  font-weight: 600;
+  color: #2f4858;
+  font-size: 14px;
+}
+
+.right input[type="text"]{
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d7e6e9;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: box-shadow .15s ease, border-color .15s ease;
+  background: #fbffff;
+}
+
+.right input[type="text"]:focus{
+  outline: none;
+  border-color: #8fc1c9;
+  box-shadow: 0 4px 12px rgba(143,193,201,0.12);
+}
+
+/* errors */
+.eror {
+    color: #c53030;
+    font-size: 12px;
+    margin-top: 6px;
+    display: block;
+    min-height: 18px;
+}
+
+/* buttons row */
+.grid-row.buttons{
+  padding-top: 16px;
+}
+
+input[type="submit"] {
+  background: linear-gradient(90deg,#2E8B57 0%, #4FB07F 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 160px;
+  box-shadow: 0 6px 18px rgba(79,176,127,0.18);
+}
+input[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(79,176,127,0.22);
+}
+
+/* success box */
+.success{
+  background:#E9F9EF;
+  border-left: 4px solid #2E8B57;
+  padding: 14px;
+  border-radius: 8px;
+  color: #22543d;
+  text-align: center;
+}
+@media (max-width: 700px){
+  .grid-row{
+    grid-template-columns: 1fr;
+  }
+  .left{
+    margin-bottom: 6px;
+  }
+  input[type="submit"]{
+    width: 100%;
+  }
+}
