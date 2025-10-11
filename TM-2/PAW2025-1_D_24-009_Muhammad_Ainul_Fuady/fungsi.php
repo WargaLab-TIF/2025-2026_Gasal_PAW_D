@@ -52,7 +52,7 @@ function valPassword($field, &$erors) {
 	if(requiredCheck($field)) {
 		$erors["password"] = "Kolom password wajib di isi";
 	} elseif (!preg_match($ptPasswordAlfaN, $field)) {
-		$erors["password"] = "Kolom password harus minimal 8 char";
+		$erors["password"] = "Kolom password harus minimal 8 char dan tidak boleh ada simbol";
 	}
 }
 ?>

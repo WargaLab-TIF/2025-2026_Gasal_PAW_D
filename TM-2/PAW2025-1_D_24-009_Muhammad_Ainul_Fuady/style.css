@@ -95,6 +95,9 @@ fieldset {
     color: #c62828;
     font-size: 13px;
     margin-top: 5px;
+    font-style: italic;
+    text-decoration: underline 1px;
+    text-underline-offset: 3px;
 }
 
 /* Tampilan hasil */
