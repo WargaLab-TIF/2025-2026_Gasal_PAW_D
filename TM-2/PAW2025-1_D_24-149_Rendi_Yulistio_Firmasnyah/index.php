@@ -36,13 +36,7 @@
         <form method="POST">
             <fieldset>
                 <?php if (isset($_POST['submit']) && count($eror) == 0): ?>
-                    <h2>Data Nasabah Berhasil Disimpan</h2>
-                    <p><span>Nama:</span><?= $nama ?></p>
-                    <p><span>No. KTP:</span><?= $no_ktp ?></p>
-                    <p><span>No. Telepon:</span><?= $no_tlp ?></p>
-                    <p><span>PIN:</span><?= $pin ?></p>
-                    <p><span>No. Rekening</span><?= $no_rekening ?></p>
-                    <p><span>ID Nasabah:</span><?= $id_nasabah ?></p>
+                    <?php require 'submit.php'; ?>
                 <?php else: ?>
                     <?php require 'form.php'; ?>
                 <?php endif; ?>
