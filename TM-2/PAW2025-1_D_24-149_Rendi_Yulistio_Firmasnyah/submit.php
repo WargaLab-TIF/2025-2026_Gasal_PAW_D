@@ -1,3 +1,4 @@
+<h2>Data Berhasil di Submit</h2>
 <table>
 	<tr>
 		<td>Nama</td>

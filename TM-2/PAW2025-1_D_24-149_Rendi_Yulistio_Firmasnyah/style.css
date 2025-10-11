@@ -102,6 +102,10 @@ input[type="submit"]:active {
     transform: translateY(0);
 }
 
+h2 {
+    text-align: center;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
