@@ -29,6 +29,8 @@
 				<option value="catur">Catur</option>
 				<option value="komposit">Komposit</option>
 				<option value="arsiran">Arsiran</option>
+				<option value="cross">Cross</option>
+				<option value="ular">Ular Tangga</option>
 			</select>
 
 			<div class="kirim">
