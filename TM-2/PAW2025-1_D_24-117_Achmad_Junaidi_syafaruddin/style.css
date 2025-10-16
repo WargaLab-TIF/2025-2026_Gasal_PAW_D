@@ -1,0 +1,128 @@
+/* ====== Soft Green Theme: Form Aktivasi ====== */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d7f3e3, #b2e0c8);
+  color: #2f3e46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.form-container {
+  background: #f6fff8;
+  padding: 35px 45px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 420px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+  color: #2e7d32;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Fieldset */
+fieldset {
+  border: none;
+}
+
+/* Label */
+label {
+  display: block;
+  text-align: left;
+  margin: 12px 0 6px;
+  font-weight: 500;
+  color: #1b4332;
+}
+
+/* Input dan Password */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #a3c9a8;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Error */
+.eror {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: 4px;
+  text-align: left;
+}
+
+/* Tombol Submit */
+input[type="submit"] {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+  background: #43a047;
+  transform: translateY(-1px);
+}
+
+input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #a8ffac;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #2e7d32;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td:first-child {
+  font-weight: 600;
+  color: #2e7d32;
+}
