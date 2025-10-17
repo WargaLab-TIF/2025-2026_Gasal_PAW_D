@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fb;
+    color: #222;
+    margin: 0
+}
+
+.form-container {
+    max-width: 560px;
+    margin: 32px auto;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px
+}
+
+h1 {
+    margin: 0 0 14px
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+label {
+    font-size: 14px
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px
+}
+
+.eror {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 13px
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 6px
+}
+
+button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #2563eb;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer
+}
+
+button:hover {
+    filter: brightness(.95)
+}
+
+button.ghost {
+    background: #fff;
+    color: #2563eb
+}
+
+.panel.sukses {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 10px
+}
+
+.tabel-ringkas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px
+}
+
+.tabel-ringkas th,
+.tabel-ringkas td {
+    border: 1px solid #e5e7eb;
+    padding: 8px;
+    text-align: left
+}
+
+.tabel-ringkas th {
+    width: 40%;
+    background: #f7f7f7
+}

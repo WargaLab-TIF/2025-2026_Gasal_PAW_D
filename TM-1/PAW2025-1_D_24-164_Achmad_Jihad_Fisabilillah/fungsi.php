@@ -50,7 +50,20 @@ function bangunTabelModulus($ukuran, $aturan, $warna) {
             } else if ($aturan == "diagonal") {
                 if ($bar == $kol) {
                     $warnai = true;
+                }else if ($bar + $kol == $ukuran + 1) {
+                    $warnai = true;
+                } 
+            } else if ($aturan == "ular_tangga") {
+                if ($ukuran % 2 == 0) {
+                    if ($bar % 2 == 0  ) {
+                        $warnai = true;
+                    }
+                }else if($ukuran %2 == 1){
+                    if ($bar % 2 == 1) {
+                        $warnai = true;
+                    }
                 }
+
             }
 
             $kelas = "sel";
