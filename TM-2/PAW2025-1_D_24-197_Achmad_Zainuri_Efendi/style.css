@@ -1,0 +1,189 @@
+/* General Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main container for the form */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form group styling to manage spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Input and select fields styling */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect final width */
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+/* Error message styling */
+.error-message {
+    color: #d93025;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Submit button styling */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #004494;
+}
+
+/* Success message styling */
+.success-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #e9f7ef;
+    border: 1px solid #5cb85c;
+    border-radius: 8px;
+    color: #155724;
+}
+
+.success-container h2 {
+    margin-top: 0;
+}/* General Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main container for the form */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form group styling to manage spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Input and select fields styling */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect final width */
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+/* Error message styling */
+.error-message {
+    color: #d93025;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Submit button styling */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #004494;
+}
+
+/* Success message styling */
+.success-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #e9f7ef;
+    border: 1px solid #5cb85c;
+    border-radius: 8px;
+    color: #155724;
+}
+
+.success-container h2 {
+    margin-top: 0;
+}
