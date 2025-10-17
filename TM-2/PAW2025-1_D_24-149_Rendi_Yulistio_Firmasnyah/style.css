@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #f1f5f9;
+}
+
+.form-container {
+    background: #1e293b;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    width: fit-content;
+    max-width: none;
+    margin: 0 auto;
+}
+
+.form-container h1 {
+    color: #f8fafc;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.input-box {
+    margin-bottom: 25px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container > label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cbd5e1;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #334155;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s;
+    background: #0f172a;
+    color: #f1f5f9;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #38475e;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    background: #1e293b;
+}
+
+.eror {
+    color: #ef4444;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    min-height: 18px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: rgba(59, 130, 246, 0.3);
+    color: #f9fafb;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+    background: linear-gradient(135deg, #2a4180, #1e3a8a);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #1e293b;
+    margin-left: 40px;
+}
+
+td {
+    padding: 12px 10px;
+    color: #f1f5f9; 
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:first-child {
+    font-weight: 600;
+    color: #5162a3;
+}
