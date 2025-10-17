@@ -31,6 +31,10 @@
 					<option value="2">Catur</option>
 					<option value="3">Background Bilangan Komposit</option>
 					<option value="4">Arsir</option>
+					<option value="5">Cross</option>
+					<option value="6">Ular Tangga</option>
+					
+					
 				</select></td>
 			</tr>
 			<tr>
