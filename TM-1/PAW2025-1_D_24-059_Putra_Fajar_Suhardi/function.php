@@ -155,11 +155,91 @@
 			case 'arsiran' : 
 				arsiran($ukuran, $warna);
 				break;
+
+			case 'cross' :
+				cross($ukuran, $warna);
+				break;
+
+			case 'ular' :
+				ular($ukuran, $warna);
+				break;
 				
 			default:
 				original($ukuran, $warna);
 				break;
 		}
 
+	}
+
+// asistensi
+
+	function cross($ukuran, $warna) {
+		$count = $ukuran;
+		$count2 = 0;
+		echo "<table>";
+		for ($i = 0; $i <= $ukuran; $i++) {
+			echo "<tr>";
+			for ($j = 0; $j <= $ukuran; $j++) {
+				if ($i == 0 && $j == 0) {
+					echo "<th></th>";
+				} elseif ($i == 0) {
+					echo "<th>$j</th>";
+				} elseif ($j == 0) {
+					echo "<th>$i</th>";
+				} else {
+					$number = $i**$j;
+					if ($j == $count2){
+						echo "<td style=background-color:$warna>$j</td>";
+					} elseif ($j != $count+1) {
+						echo "<td>$j</td>";
+					} else {
+						echo "<td style=background-color:$warna>$j</td>";
+					}
+				}
+			}
+			echo "</tr>";
+			$count--;
+			$count2++;
+		}
+		echo "</table>";
+	}
+
+	function ular($ukuran, $warna) {
+		echo "<table>";
+		for ($i = 0; $i <= $ukuran; $i++) {
+			echo "<tr>";
+			for ($j = 0; $j <= $ukuran; $j++) {
+				if ($i == 0 && $j == 0) {
+					echo "<th></th>";
+				} elseif ($i == 0) {
+					echo "<th>$j</th>";
+				} elseif ($j == 0) {
+					echo "<th>$i</th>";
+				} else {
+					$number = $i**$j;
+					$awal = 1;
+					$akhir = $ukuran;
+					if ($ukuran%2==1) {
+						if ($i%2==1) {
+							echo "<td style=background-color:$warna>$number</td>";
+						} elseif ($j == $ukuran) {
+							echo "<td style=background-color:$warna>$number</td>";
+						} else {
+							echo "<td>$number</td>";
+						}
+					} else {
+						if ($i%2==0) {
+							echo "<td style=background-color:$warna>$number</td>";
+						} elseif ($j == $ukuran) {
+							echo "<td style=background-color:$warna>$number</td>";
+						} else {
+							echo "<td>$number</td>";
+						}
+					}
+				}
+			}
+			echo "</tr>";
+		}
+		echo "</table>";
 	}
 ?>
