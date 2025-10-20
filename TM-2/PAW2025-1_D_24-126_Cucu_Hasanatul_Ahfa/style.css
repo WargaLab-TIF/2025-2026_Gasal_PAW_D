@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 450px;
+    background: #fff;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #2a7a6e;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+
+button {
+    background-color: #2a7a6e;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #245f58;
+}
+
+.error-msg {
+    color: #d8000c;       
+    background: none !important;  
+    border: none !important;     
+    box-shadow: none !important;  
+    padding: 0;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+input.error,
+textarea.error,
+input.is-invalid,
+textarea.is-invalid {
+    border: 1px solid #ccc !important;   
+    background-color: #fff !important;   
+    box-shadow: none !important;         
+    outline: none !important;        
+}
+
+input:invalid {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    background-color: #fff !important;
+}
+
+input:invalid,
+input.error,
+input.is-invalid,
+textarea:invalid,
+textarea.error,
+textarea.is-invalid {
+    border: 1px solid #ccc !important;   
+    background-color: #fff !important;   
+    box-shadow: none !important;         
+    outline: none !important;            
+}
+
+input:invalid:focus,
+textarea:invalid:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.error-msg,
+.invalid-feedback {
+    color: #d8000c !important;      
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-top: 5px !important;
+    font-size: 13px !important;
+}
